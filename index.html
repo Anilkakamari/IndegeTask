@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>IndegeTask</title>
+    <!-- Latest compiled and minified CSS -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Chilanka&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <section class="banner">
+        <div class="container text-center">
+            <h2 class="title">Result of the test</h2>
+            <div class="row text-center">
+                <div class="col animated">
+                    <img src="images/never.png" class="bounce" alt="icon">
+                    <p>Never</p>
+                </div>
+                <div class="col">
+                    <img src="images/occassionaly.png" alt="icon">
+                    <p>Occasionally</p>
+                </div>
+                <div class="col">
+                    <img src="images/hours.png" alt="icon">
+                    <p>4 hours</p>
+                </div>
+                <div class="col">
+                    <img src="images/yearly.png" alt="icon">
+                    <p>Yearly</p>
+                </div>
+                <div class="col">
+                    <img src="images/never.png" alt="icon">
+                    <p>Never</p>
+                </div>
+            </div>
+            <div class="bottom-line">
+                <ul class="nav nav-pills" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active less-relavant" data-toggle="pill" href="#home"></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="pill" href="#menu1"></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="pill" href="#menu2"></a>
+                    </li>
+                </ul>
+            </div>
+            <ul class="no-style">
+                <li>
+                    <p>Less Relevant</p>
+                </li>
+                <li>
+                    <p>Relevant</p>
+                </li>
+                <li>
+                    <p>Very Relevant</p>
+                </li>
+            </ul>
+            <div class="mt-5">
+                <button type="button" class="btn-tryAgain">Try Again <img src="images/_.png" alt="symbol"></button>
+            </div>
+        </div>
+    </section>
+    <script>
+        $(document).ready(function () {
+            $('.btn-tryAgain').click(function () {
+                // $('.less').css({ 'background': 'rgb(185, 203, 183,0.5)', 'display': 'flex', 'jusyify-content': 'space-between', 'width': '250px' });
+                $('.less-relavant').addClass('less');
+                $('.nav-link').removeClass('active');
+            });
+        });
+    </script>
+</body>
+
+</html>
